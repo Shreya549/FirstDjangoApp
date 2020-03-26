@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <form action="add">
+        First Number :<input type="number" name = "num1">
+        Second Number : <input type="number" name = "num2">
+        <input type= "submit" value="Add">
+    </form>
+    {% endblock %}
+</body>
+</html>
