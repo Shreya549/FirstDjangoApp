@@ -57,13 +57,13 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
+                <a class="nav-link" href="{% static 'products.html' %}">Our Products</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="{% static 'about.html' %}">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="{% static 'contact.html' %}">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -96,7 +96,7 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt="">
+              <img src="{% static 'assets/images/feature-image.jpg' %}" alt="">
             </div>
           </div>
           <div class="col-md-6">
@@ -127,7 +127,7 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_01.jpg" alt="">
+                <img src="{% static 'assets/images/team_01.jpg' %}" alt="">
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -193,7 +193,7 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_04.jpg" alt="">
+                <img src="{% static 'assets/images/team_04.jpg' %}" alt="">
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -352,7 +352,7 @@ https://templatemo.com/tm-546-sixteen-clothing
             <div class="inner-content">
               <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
             
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            - Design: <a rel="nofollow noopener" href="{% static 'https://templatemo.com' %}" target="_blank">TemplateMo</a></p>
             </div>
           </div>
         </div>
@@ -361,16 +361,17 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 
     <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/accordions.js"></script>
+    <!-- Additional Scripts -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script src="{% static 'assets/js/owl.js' %}"></script>
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.js' %}"></script>
+    <script src="{% static 'assets/js/accordions.js' %}"></script>
 
 
     <script language = "text/Javascript"> 
