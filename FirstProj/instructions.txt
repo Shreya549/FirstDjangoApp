@@ -235,3 +235,40 @@ if (-----):
 
 Add Jinja code to html too
 
+____________________________________________-
+
+1. Make changes in the settings.py
+
+2. Install pip install psycopg2--- connector
+
+3. Change models.py
+Google django models field
+
+4. Add migrations
+In settings.py 
+INSTALLED_APPS = [
+    'ShoppingApp.apps.ShoppingAppConfig',
+	------
+
+python manage.py migrate
+python manage.py make migrations
+___________________________________________
+
+python manage.py createsuperuser
+
+-----------------
+Go to admin.py
+Register your models there
+
+---------------------
+To add and fetch media
+
+Add in urls.py of Project
+from django.conf import settings
+from django.conf.urls.static import static
+urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+In setting.py 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

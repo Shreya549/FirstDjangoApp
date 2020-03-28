@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>Sixteen Clothing HTML Template</title>
 
@@ -110,7 +110,7 @@ https://templatemo.com/tm-546-sixteen-clothing
           {% for prod in prods %}
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="{{baseUrl}}/{{prod.img}}" alt=""></a>
+              <a href="#"><img src="{{prod.img.url}}" alt=""></a>
               <div class="down-content">
                 <a href="#"><h4>{{prod.name}}</h4></a>
                 <h6>${{prod.price}}</h6>
