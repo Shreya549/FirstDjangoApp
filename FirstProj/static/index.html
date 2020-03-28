@@ -57,12 +57,26 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
+
+              {%  if user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link">Hello, {{user.first_name}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="accounts/logout">Logout</a>
+              </li>
+              
+              {% else %}
+
               <li class="nav-item">
                 <a class="nav-link" href="accounts/register">Register</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="accounts/login">Login</a>
               </li>
+
+              {% endif %}
+
               <li class="nav-item">
                 <a class="nav-link" href="{% static 'contact.html' %}">Contact Us</a>
               </li>
